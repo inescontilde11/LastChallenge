@@ -99,7 +99,7 @@ class navigationComponent extends HTMLElement{
             `<header>
             <div id="headerContainer">
                 <div id="logoContainer">
-                    <a href="./homePage.html">
+                    <a href="./index.html">
                         <img src="./assets/CVGatuna.png" alt="Home">
                     </a>
                 </div>
