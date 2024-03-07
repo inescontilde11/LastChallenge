@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+body {
+    font-family: lbRegular;
+}
+
+#recommendBanner {
+    background: url(./../assets/recommendBanner3.jpg);
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    width: 100%;
+}
+
+hr {
+    width: 56%;
+    border: solid #0e6696 1px;
+    margin-top: 4%;
+}
+
+#recommendationsSection {
+    margin: 4% 0 4% 6%;
+    font-size: calc(72% + 8px);
+}
+
+h1 {
+    font-size: 96px;
+}
+
+.recommendationsList {
+    display: block;
+    list-style: inside;
+}
+
+.recommendationsListIl {
+    padding: 4px;
+}
+
+#bannerArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+}

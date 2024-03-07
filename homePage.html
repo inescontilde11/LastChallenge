@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C. V. Gatuna</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Helping_Paw_2.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+</head>
+<body>
+    <navigation-component   tienda="underlineAnimation"
+                            contactanos="underlineAnimation"
+                            aboutUs="underlineAnimation"
+                            proyecto="underlineAnimation"
+                            colaboraciones="underlineAnimation"
+                            recomendaciones="underlineAnimation"></navigation-component>
+    <section>
+        <!-- <img src="./assets/cat2.jpg" id="homeBanner"> -->
+        <div id="homeBanner">
+            <article>
+                <h2>Regístrate ahora</h2>
+                <a href="./registro.html"><input class="blueBtn" type="button" value="Registro"></a>
+            </article>
+            <article>
+                <h2>Pide una cita</h2>
+                <a href="./cita.html"><input class="blueBtn" type="button" value="Pedir una cita"></a>
+            </article>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <article>
+            <h2 id="subTitleSection2">¿Tienes alguna consulta rápida?</h2>
+            <form action="">
+                <p>
+                    <input type="text" class="formInputs" id="nameInput" placeholder="Nombre y apellido" required>
+                </p>
+                <p>
+                    <input type="email" class="formInputs" id="emailInput" placeholder="Correo electrónico" required>
+                </p>
+                <p>
+                    <textarea placeholder="Escribe tu pregunta..." class="formInputs" cols="30" rows="10" required></textarea>
+                </p>
+                <p>
+                    <input type="submit" title="Enviar" class="blueBtn" value="Enviar">
+                </p>
+            </form>
+        </article>
+    </section>
+    <footer-component></footer-component>
+</body>
+</html>

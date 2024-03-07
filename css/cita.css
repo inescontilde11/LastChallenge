@@ -1,0 +1,77 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+body {
+    overflow-y: hidden;
+    font-family: lbRegular;
+}
+
+h2 {
+    margin-bottom: 8vh;
+    font-size: calc(100% + 24px);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 64vh;
+}
+
+form {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#radioContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    margin-block: auto;
+}
+
+.formInputs {
+    font-size: calc(72% + 8px);
+    padding: 16px;
+    border: solid #0e6696 3px;
+    border-radius: 16px;
+    min-width: 35%;
+}
+
+.formInputs::placeholder {
+    color: #a8a8a8;
+}
+
+.blueBtn {
+    background-color: #08B4FE;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 8px 8px 0px #1362c2;
+    color: white;
+    font-size: 32px;
+    font-family: lbDemiBold;
+    margin-top: 32px;
+}
+
+.blueBtn:hover {
+    cursor: pointer;
+}
+
+footer-component {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

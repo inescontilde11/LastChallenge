@@ -1,0 +1,92 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+h1, h2 {
+    font-family:lbDemiBold ;
+}
+
+.blueBtn {
+    background-color: white;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 8px 8px 0px #a2d0ff;
+    color: #08B4FE;
+    font-size: 16px;
+    font-family: lbDemiBold;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.blueBtn:hover {
+    cursor: pointer;
+}
+
+.formInputs {
+    font-family: lbRegular;
+    font-size: calc(72% + 4px);
+    padding: 4px;
+    border: solid #0e6696 3px;
+    border-radius: 8px;
+    min-width: 64%;
+}
+
+.formInputs::placeholder {
+    color: #a8a8a8;
+}
+
+#inputSearchP {
+    background-color: white;
+    color: #0e6696;
+}
+
+#inputSearch {
+    background-color: none;
+    color: white;
+    border: none;
+    width: 85%;
+}
+
+aside, section{
+    margin-left: 6%;
+    font-family: lbRegular;
+}
+
+#asideSectionContainer {
+    display: flex;
+    margin-top: 4%;
+}
+
+aside {
+    background-color: #08B4FE;
+    color: white;
+    border: solid #0e6696 2px;
+    border-radius: 25px;
+    padding: 8px;
+    width: 20%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#popularContainer {
+    display: flex;
+    margin-right: 3%;
+    max-width: 96%;
+    overflow-y: scroll;
+}
+
+footer-component {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

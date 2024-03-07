@@ -1,0 +1,148 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+
+body {
+    font-family: lbRegular;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: lbDemiBold;
+    background-color: #08B4FE;
+    color: white;
+    max-height: 20vh;
+}
+
+#headerContainer {
+    display: table;
+}
+
+#logoContainer {
+    display: table-cell;
+}
+
+#navContainer {
+    display: table-cell;
+    vertical-align: middle;
+    width: 82%;
+    padding-top: 32px;
+}
+
+nav {
+    margin-left: 24%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    padding: 2em;
+    font-size: 32px;
+}
+
+ul li ul li {
+    background-color: #08B4FE;
+    right: 2em;
+}
+
+ul li ul li .underlineAnimation {
+    display: block;
+    position: relative;
+    padding: 2em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.underlineAnimation {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.underlineAnimation::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.underlineAnimation:hover::after,
+.underlineAnimation:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+/* Scale from center */
+li .underlineAnimation::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+li .underlineAnimation:hover::after,
+li .underlineAnimation:focus::after{
+    transform: scale(1);
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    padding-top: 4em;
+}
+
+nav ul li a:hover+ul,nav ul li ul:hover{
+	display: block;
+}
+
+#problematicUl {
+    left: 80%;
+    padding-top: 2em;
+}
+
+.profile {
+    display: inline;
+    position: relative;
+    padding: 0.2em 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+nav li .underline {
+    padding: 0.2em 0;
+}
+
+nav ul li ul li .underline {
+    padding: 2em;
+    background-color: #08B4FE;
+}
+
+.underline {
+    display: inline;
+    text-decoration: underline;
+    color: inherit;
+}
+

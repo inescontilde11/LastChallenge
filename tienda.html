@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C. V. Gatuna - Tienda</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/Helping_Paw_2.png" />
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/popular.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+    <script src="./js/popular.js"></script>
+</head>
+<body>
+    <navigation-component   tienda="underline"
+                            contactanos="underlineAnimation"
+                            aboutUs="underlineAnimation"
+                            proyecto="underlineAnimation"
+                            colaboraciones="underlineAnimation"
+                            recomendaciones="underlineAnimation"></navigation-component>
+
+    <section>
+        <h1>Estos son los productos que tenemos disponibles en tienda</h1>
+        <h3>Lo sentimos, no existe la posibilidad de comprar online.</h3>
+    </section>
+    <div id="asideSectionContainer">
+        <aside>
+            <p class="formInputs" id="inputSearchP"><i class="icon-magnifier"></i> <input type="search" id="inputSearch" placeholder="Buscar..."></p>
+            <p>Categoría
+                <select class="formInputs">
+                    <option value="food">Comida</option>
+                    <option value="toys">Juguetes</option>
+                    <option value="accessories">Accesorios</option>
+                </select>
+            </p>
+            <input type="button" class="blueBtn" value="Aplicar filtros">
+        </aside>
+        <section id="popularContainer">
+            <popular-new desc="Premia a tu querida mascota con estas golosinas hechas con cereales,
+                                pollo y verduras." destino="Golosinas gato 300g" precio="6.20€" imagen="./assets/catTreats.jpg"></popular-new>
+            <popular-new desc="Premia a tu querida mascota con estas golosinas hechas con cereales,
+                                ternera y pollo." destino="Golosinas perro 300g" precio="6.50€" imagen="./assets/dogTreats.jpg"></popular-new>
+            <popular-new desc="Bol de plástico azul con decorado de huella pata."
+                            destino="Comedero" precio="4.15€" imagen="./assets/comedero.jpg"></popular-new>
+            <popular-new desc="Rascador para que tu gato pueda afilarse las garras."
+                            destino="Rascador" precio="15.60€" imagen="./assets/rascador.jpg"></popular-new>
+            <popular-new desc="Pienso hecho con cereales,
+                                pollo y verduras." destino="Comida de gato 10kg" precio="20.00€" imagen="./assets/catFood.jpg"></popular-new>
+            <popular-new desc="Pienso hechas con cereales,
+                                pollo y ternera." destino="Comida de perro 10kg" precio="21.50€" imagen="./assets/dogFood.jpg"></popular-new>
+            <popular-new desc="Juguete para morder de perro, es bueno para sus mandíbulas."
+                                destino="Hueso para perro" precio="2.20€" imagen="./assets/dogToy.jpg"></popular-new>
+            <popular-new desc="Arena ultra-absorbente, reduce el mal olor."
+                                destino="Arena para gatos 6kg" precio="15.25€" imagen="./assets/arena.jpg"></popular-new>
+        </section>
+    </div>
+    <footer-component></footer-component>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+navigation-component {
+    position: relative;
+    z-index: 5;
+}
+
+section {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2, table {
+    margin-left: 6%;
+}
+
+table {
+    margin-right: 15%;
+}
+
+td {
+    font-family: lbRegular;
+    text-align: justify;
+    margin-bottom: 90px;
+    padding: 2em 3em 2em 0em;
+}
+
+p {
+    word-spacing: 4px;
+    font-size: calc(90% + 5px);
+}
+
+.marginLeft {
+    margin-left: 8%;
+}
+
+hr {
+    width: 56%;
+    border: solid #0e6696 1px;
+}
+
+
+#asideContainer {
+    position: relative;
+    float: right;
+    bottom: 680px;
+    right: 24px;
+    width: 11%;
+    margin: 2em;
+    height: 10vh;
+}
+
+aside {
+    display: table-cell;
+}

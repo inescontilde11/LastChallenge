@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVGatuna - Pide cita</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Helping_Paw_2.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+</head>
+<body>
+    <navigation-component   tienda="underlineAnimation"
+                            contactanos="underlineAnimation"
+                            aboutUs="underlineAnimation"
+                            proyecto="underlineAnimation"
+                            colaboraciones="underlineAnimation"
+                            recomendaciones="underlineAnimation"></navigation-component>
+    <section>
+        <article>
+            <form action="" method="post">
+                <div id="formContainer">
+                    <h2>Registro de usuario</h2>
+                    <p><input class="formInputs" type="text" name="" id="" placeholder="Nombre y apellidos" required></p>
+                    <p><input class="formInputs" type="email" name="" id="" placeholder="Correo electrónico" required></p>
+                    <p><input class="formInputs" type="password" name="" id="" placeholder="Contraseña" required></p>
+                    <p><input class="formInputs" type="password" name="" id="" placeholder="Confirmar contraseña" required></p>
+                    <textarea class="formInputs" name="" id="" cols="30" rows="10" placeholder="Mascotas..."></textarea>
+                    <div id="btnContainer">
+                        <input class="blueBtn" type="submit" id="submitBtn" value="Enviar">
+                        <a href="./signIn.html" id="signIn">Ya tengo cuenta</a>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+    <footer-component></footer-component>
+</body>
+</html>

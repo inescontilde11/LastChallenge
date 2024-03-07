@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVGatuna - Pide cita</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Helping_Paw_2.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/cita.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+</head>
+<body>
+    <navigation-component   tienda="underlineAnimation"
+                            contactanos="underlineAnimation"
+                            aboutUs="underlineAnimation"
+                            proyecto="underlineAnimation"
+                            colaboraciones="underlineAnimation"
+                            recomendaciones="underlineAnimation"></navigation-component>
+    <section>
+        <article>
+            <form action="" method="post">
+                <h2>Pedir cita</h2>
+                <p><input class="formInputs" type="text" name="" id="" placeholder="Nombre y apellido" required></p>
+                <p><input class="formInputs" type="text" name="" id="" placeholder="Nombre de la/s mascota/s" required></p>
+
+                <div id="container">
+                    <div id="radioContainer">
+                        <div>
+                            <label for="cat">Gato</label>
+                            <input type="radio" name="pets" id="cat" checked>
+                        </div>
+                        <div>
+                            <label for="dog">Perro</label>
+                            <input type="radio" name="pets" id="dog">
+                        </div>
+                        <div>
+                            <label for="both">Ambos</label>
+                            <input type="radio" name="pets" id="both">
+                        </div>
+                    </div>
+                    <p><input class="formInputs" type="date" name="" id="inputDate" min="" required></p>
+                </div>
+                <p>
+                    <select class="formInputs" name="" id="">
+                        <option value="8A9">8:00-9:00</option>
+                        <option value="9A10">9:00-10:00</option>
+                        <option value="1030A1130">10:30-11:30</option>
+                        <option value="1130A1230">11:30-12:30</option>
+                        <option value="1230A1330">12:30-13:30</option>
+                        <option value="15A16">15:00-16:00</option>
+                        <option value="16A17">16:00-17:00</option>
+                        <option value="17A18">17:00-18:00</option>
+                        <option value="1830A1930">18:30-19:30</option>
+                        <option value="1930A2030">19:30-20:30</option>
+                    </select>
+                </p>
+                <p><input class="blueBtn" type="submit" id="submitBtn" value="Confirmar cita"></p>
+            </form>
+        </article>
+    </section>
+    <footer-component></footer-component>
+    <script>
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        var month = currentDate.getMonth() + 1; //January is 0!
+        var year = currentDate.getFullYear();
+        if (day < 10) {
+        day = '0' + day
+        }
+        if (month < 10) {
+        month = '0' + month
+        }
+        var strCurrentDate = `${year}-${month}-${day}`;
+        document.getElementById("inputDate").setAttribute("min", strCurrentDate);
+    </script>
+</body>
+</html>

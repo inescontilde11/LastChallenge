@@ -1,0 +1,161 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 56px;
+    font-family: lbDemiBold;
+}
+
+section {
+    margin-left: 6%;
+    font-family: lbRegular;
+}
+
+#profileImg {
+    width: 150px;
+    border-radius: 90px;
+    border: solid #0e6696 2px;
+}
+
+.blueBtn {
+    background-color: #08B4FE;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 8px 8px 0px #1362c2;
+    color: white;
+    font-size: 24px;
+    font-family: lbDemiBold;
+    margin-top: 32px;
+}
+
+.blueBtn:hover {
+    cursor: pointer;
+}
+
+.redBtn {
+    background-color: #e94447;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 8px 8px 0px #b00c19;
+    color: white;
+    font-size: 24px;
+    font-family: lbDemiBold;
+    margin-top: 32px;
+}
+
+.redBtn {
+    background-color: #e94447;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 8px 8px 0px #b00c19;
+    color: white;
+    font-size: 24px;
+    font-family: lbDemiBold;
+    margin-top: 32px;
+}
+
+.redBtn:hover {
+    cursor: pointer;
+}
+
+.blackBtn {
+    background-color: #252525;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 24px;
+    font-family: lbDemiBold;
+    margin-top: 32px;
+}
+
+.blackBtn:hover {
+    cursor: pointer;
+}
+
+#formContainer {
+    position: relative;
+    bottom: 11em;
+}
+
+#editBtn {
+    margin-right: 1%;
+}
+
+#btnContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 208px;
+    bottom: 192px;
+}
+
+.formInputs {
+    font-size: calc(72% + 8px);
+    padding: 16px;
+    border: solid #0e6696 3px;
+    border-radius: 16px;
+    min-width: 100%;
+    font-family: lbRegular;
+}
+
+.formInputs::placeholder {
+    color: #a8a8a8;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+
+  .closeBtn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .closeBtn:hover,
+  .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

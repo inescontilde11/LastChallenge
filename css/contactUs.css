@@ -1,0 +1,59 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+
+body {
+    overflow-y: hidden;
+}
+
+h2 {
+    font-size: calc(90% + 24px);
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+td {
+    font-size: calc(72% + 5px);
+}
+
+td:nth-child(odd) {
+    padding: 20px 20px 20px 0px ;
+}
+
+td:nth-child(even) {
+    padding: 20px 20px 20px 50px;
+    text-align: end;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    height: 54vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: calc(90% + 16px);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+footer-component {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

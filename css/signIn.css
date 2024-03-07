@@ -1,0 +1,95 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+body {
+    font-family: lbRegular;
+    overflow-y: hidden;
+}
+
+h2 {
+    font-family: lbDemiBold;
+    color: #08B4FE;
+    font-size: calc(100% + 16px);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 72vh;
+}
+
+form {
+    text-align: center;
+}
+
+#formContainer {
+    border: solid #0e6696 4px;
+    border-radius: 16px;
+    display: inline-block;
+    width: 24%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#radioContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    margin-block: auto;
+}
+
+.formInputs {
+    font-family: lbRegular;
+    font-size: calc(72% + 8px);
+    padding: 16px;
+    margin: 4px;
+    border: solid #0e6696 3px;
+    border-radius: 16px;
+    min-width: 72%;
+}
+
+.formInputs::placeholder {
+    color: #a8a8a8;
+}
+
+#btnContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blueBtn {
+    background-color: #08B4FE;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 8px 8px 0px #1362c2;
+    color: white;
+    font-size: 32px;
+    font-family: lbDemiBold;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.blueBtn:hover {
+    cursor: pointer;
+}
+
+#pwd {
+    margin-left: 2%;
+    font-family: lbDemiBold;
+    color: #08B4FE;
+    font-size: calc(80% + 8px);
+    margin-block: auto;
+}

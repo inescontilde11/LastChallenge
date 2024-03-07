@@ -1,0 +1,56 @@
+@font-face {
+    font-family: lbDemiBold;
+    src: url(./../fonts/lucidabrightdemibold.ttf);
+}
+
+@font-face {
+    font-family: lbRegular;
+    src: url(./../fonts/lucidabrightregular.ttf);
+}
+
+body {
+    overflow-y: hidden;
+    font-family: lbRegular;
+}
+
+h1 {
+    font-size: calc(72% + 24px);
+    margin-left: 6%;
+}
+
+hr {
+    width: 56%;
+    border: solid #0e6696 1px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 56vh;
+}
+
+table {
+    margin: 0 6%;
+}
+
+th {
+    font-size: calc(72% + 16px);
+}
+
+td {
+    padding: 0 20px;
+    width: 20%;
+    font-size: calc(72% + 8px);
+    text-align: justify;
+}
+
+td:first-child, td:last-child {
+    text-align: center;
+}
+
+footer-component {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

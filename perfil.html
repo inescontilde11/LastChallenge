@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVGatuna - Pide cita</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Helping_Paw_2.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+</head>
+<body>
+    <navigation-component   tienda="underlineAnimation"
+                            contactanos="underlineAnimation"
+                            aboutUs="underlineAnimation"
+                            proyecto="underlineAnimation"
+                            colaboraciones="underlineAnimation"
+                            recomendaciones="underlineAnimation"></navigation-component>
+
+    <section>
+        <h1>Perfil de usuario</h1>
+        <div>
+            <div><img src="./assets/profile1.png" id="profileImg"></div>
+            <input type="button" class="blueBtn" value="Ver citas">
+        </div>
+        <article>
+            <div id="formContainer">
+                <form action="">
+                    <p><input class="formInputs" type="text" value="Sara Escalé" required disabled></p>
+                    <p><input class="formInputs" type="email" value="shadowacademy@ejemplo.com" disabled></p>
+                    <p><input class="formInputs" type="password" value="Contraseña" disabled></p>
+                    <p><input class="formInputs" type="password" name="" id="" value="Confirmar contraseña" required disabled></p>
+                    <textarea class="formInputs" cols="30" rows="10" required disabled>Lázuli -> Gato abisino  Hembra 4 años,
+Vi -> Perro pastor alemán Hembra 2 años
+                    </textarea>
+                </form>
+            </div>
+            <div id="btnContainer">
+                <button class="blueBtn" onclick="editMode()" id="editBtn"><i class="icon-pencil"></i>Editar</button>
+                <button class="blueBtn" onclick="saveMode()" id="saveBtn" hidden><i class="icon-check"></i>Guardar</button>
+                <input type="button" class="redBtn" id="logOutBtn" onclick="openModal()" value="Cerrar sesión">
+            </div>
+            <div></div>
+        </article>
+    </section>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close closeBtn">&times;</span>
+            <p>¿Quieres cerrar sesión?</p>
+            <br>
+            <input type="button" class="close blackBtn" value="Cerrar sesión" onclick="alert('Se ha cerrado la sesión con éxito.')">
+        </div>
+
+    </div>
+    <footer-component></footer-component>
+    <script src="./js/datosPerfil.js"></script>
+</body>
